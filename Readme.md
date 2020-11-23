@@ -1,7 +1,7 @@
 # Проект «Киноман» [![Build status][travis-image]][travis-url]
 
 * Студент: [Алена Петерфельд](https://up.htmlacademy.ru/ecmascript/13/user/1391583).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Фаллер] (https://htmlacademy.ru/profile/id505933)].
 
 ---
 
