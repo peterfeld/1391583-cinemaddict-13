@@ -3,7 +3,6 @@ import {createUserProfileTemtlate} from "./view/user-profile.js";
 import {createFilmsListTemplate} from "./view/films-list.js";
 import {createFilmCardTemplate} from "./view/film-card.js";
 import {createFilmsListExtraTemplate} from "./view/films-list-extra.js";
-import {createPopupTemtlate} from "./view/popup.js";
 
 const FILM_COUNT = 5;
 const FILM_EXTRA_COUNT = 2;
@@ -40,4 +39,3 @@ for (let i = 0; i < filmListExtra.length; i++) {
   }
 }
 
-render(siteMainElement, createPopupTemtlate(), `beforeend`);
