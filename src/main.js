@@ -5,6 +5,7 @@ import {createFilmCardTemplate} from "./view/film-card.js";
 import {createFilmsListExtraTemplate} from "./view/films-list-extra.js";
 import {createPopupTemtlate} from "./view/popup.js";
 import {generateFilm} from "./mock/film.js";
+import {generateFilter} from "./mock/filter.js";
 
 const FILM_COUNT = 20;
 const FILM_EXTRA_COUNT = 2;
@@ -22,8 +23,9 @@ const siteHeader = document.querySelector(`header`);
 render(siteHeader, createUserProfileTemtlate(), `beforeend`);
 
 const siteMainElement = document.querySelector(`.main`);
+const filters = generateFilter(filmsElements);
 
-render(siteMainElement, createSiteMenuTemplate(), `beforeend`);
+render(siteMainElement, createSiteMenuTemplate(filters), `beforeend`);
 
 render(siteMainElement, createFilmsListTemplate(), `beforeend`);
 
